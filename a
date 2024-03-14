@@ -8,6 +8,8 @@ react-native init MeuProjeto
 react-native run-android
 
 
+npm uninstall -g react-native-cli
+yarn global remove react-native-cli
 
 
 
