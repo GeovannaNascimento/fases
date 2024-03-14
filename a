@@ -1,3 +1,28 @@
+
+npm install -g react-native-cli
+
+yarn global add react-native-cli
+
+react-native init MeuProjeto
+
+react-native run-android
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
