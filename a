@@ -1,0 +1,36 @@
+import React, { useState } from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+
+const Scoreboard = () => {
+  const [score, setScore] = useState(0);
+
+  const incrementScore = () => {
+    setScore(score + 1);
+  };
+
+  const resetScore = () => {
+    setScore(0);
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.scoreText}>Score: {score}</Text>
+      <Button title="Increment Score" onPress={incrementScore} />
+      <Button title="Reset Score" onPress={resetScore} />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  scoreText: {
+    fontSize: 24,
+    marginBottom: 20,
+  },
+});
+
+export default Scoreboard;
